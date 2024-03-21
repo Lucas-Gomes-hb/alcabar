@@ -1,0 +1,57 @@
+.conheca-container {
+  background: #fff;
+  padding: 100px;
+}
+
+.conheca-espaco {
+  margin-top: 50px;
+}
+
+.conheca-espaco .options {
+  display: flex;
+  justify-content: center;
+}
+
+.options button {
+  background: #fff;
+  font-family: "Kaushan Script", cursive;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: capitalize;
+  border: none;
+  cursor: pointer;
+  padding: 0 10px;
+  transition: 0.2s;
+}
+
+.active {
+  color: #333;
+}
+
+.active-border {
+  width: 80%;
+  height: 2px;
+  background: #333;
+  margin: auto;
+}
+
+.options button:hover {
+  color: #333;
+}
+
+.anime-border {
+  height: 2px;
+  background: #333;
+  margin: auto;
+  animation-name: slide-border;
+  animation-duration: 0.5s;
+}
+
+@keyframes slide-border {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
