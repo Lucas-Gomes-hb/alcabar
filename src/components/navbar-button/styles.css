@@ -12,11 +12,23 @@
   text-transform: uppercase;
   font-weight: 800;
   line-height: 100px;
-  color: #ffffff;
   padding: 0;
 }
 .menu-button div {
-  background: #fff;
   width: 30%;
   height: 2px;
+}
+
+.menu-color {
+  color: #fff;
+}
+.menu-color-black {
+  color: #333;
+}
+
+.menu-bg {
+  background: #fff;
+}
+.menu-bg-black {
+  background: #333;
 }

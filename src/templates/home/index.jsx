@@ -21,6 +21,15 @@ export const Home = () => {
             ótimo espaço para shows e eventos.
           </p>
         </div>
+        <div className="conheca-espaco">
+          <div className="options">
+            <button>Salão</button>
+            <button>Bar</button>
+            <button>Cozinha</button>
+            <button>Parrilha</button>
+            <button>Prêmios</button>
+          </div>
+        </div>
       </div>
     </>
   );

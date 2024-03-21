@@ -46,3 +46,28 @@
   text-align: center;
   width: 85%;
 }
+
+.conheca-espaco {
+  margin-top: 50px;
+}
+
+.conheca-espaco .options {
+  display: flex;
+  justify-content: center;
+}
+
+.options button {
+  background: #fff;
+  font-family: "Kaushan Script", cursive;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: capitalize;
+  border: none;
+  cursor: pointer;
+  padding: 0 10px;
+  transition: 0.2s;
+}
+
+.options button:hover {
+  color: #333;
+}

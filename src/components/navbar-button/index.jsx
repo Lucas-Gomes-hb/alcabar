@@ -1,10 +1,12 @@
 import "./styles.css";
 
-export const NavBarButton = ({ title }) => {
+export const NavBarButton = ({ title, change }) => {
   return (
     <div className="menu-button">
-      <a href="..">{title}</a>
-      <div></div>
+      <a href=".." className={change ? "menu-color" : "menu-color-black"}>
+        {title}
+      </a>
+      <div className={change ? "menu-bg" : "menu-bg-black"}></div>
     </div>
   );
 };
