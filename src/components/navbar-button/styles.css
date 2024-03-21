@@ -1,0 +1,23 @@
+.menu .menu-button {
+  display: grid;
+  min-height: 90%;
+  height: 90%;
+  width: 5vw;
+  justify-items: center;
+}
+
+.menu-button a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 100px;
+  color: #ffffff;
+  padding: 0;
+}
+.menu-button div {
+  background: #fff;
+  width: 30%;
+  height: 2px;
+}
