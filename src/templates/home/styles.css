@@ -1,38 +1,48 @@
-.main-container {
-  min-height: 85vh;
-  background: rgba(27, 27, 27, 0.5);
-  color: #f9f9f9;
+.conheca-container {
+  background: #fff;
   padding: 100px;
-  font-weight: 400;
-  text-align: center;
+}
+
+.conheca-informacao {
+  margin: auto;
+  width: 65%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
+  margin-bottom: 15px;
 }
 
-.main-container h1 {
-  color: #ffffff;
+.conheca-informacao .lupulo {
+  width: 90px;
+  height: 30px;
+  background: url("../../images/lupulo.jpg") repeat-x;
+  background-size: 30px;
+  margin-bottom: 15px;
+}
+
+.conheca-informacao h2 {
   font-family: "Kaushan Script", cursive;
-  font-size: 80px;
-  line-height: 115px;
-  padding-bottom: 5px;
+  font-size: 45px;
+  line-height: 1;
   text-transform: capitalize;
+  margin-bottom: 15px;
 }
 
-.main-container h2 {
+.conheca-informacao h3 {
   font-family: "Great Vibes", cursive;
   font-size: 35px;
   line-height: 45px;
-  margin-bottom: 0;
-  text-transform: capitalize;
+  font-style: italic;
+  line-height: 1;
+  color: #333;
+  margin-bottom: 10px;
 }
 
-.main-container p {
-  font-family: "Raleway", sans-serif;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 27px;
-  padding-bottom: 10px;
-  width: 50%;
+.conheca-informacao p {
+  font-family: "Raleway", cursive;
+  font-size: 15px;
+  line-height: 24px;
+  color: #333;
+  text-align: center;
+  width: 85%;
 }

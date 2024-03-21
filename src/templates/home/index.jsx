@@ -1,17 +1,26 @@
-import { NavBar } from "../../components/navbar";
 import "./styles.css";
+
+import { MainContainer } from "../../components/main-container";
+import { NavBar } from "../../components/navbar";
 
 export const Home = () => {
   return (
     <>
       <NavBar />
-      <div className="main-container">
-        <h2>Eventos</h2>
-        <h1>Alcabar para seus eventos</h1>
-        <p>
-          Alcabar é um bar e restaurante localizado em Porto Alegre. Temos um
-          ótimo local para abraçar suas festas e confraternizações.
-        </p>
+      <MainContainer />
+
+      <div id="conheca-a-casa" className="conheca-container">
+        <div className="conheca-informacao">
+          <h3>Olá</h3>
+          <h2>Bem-vindo(a) ao Alcabar</h2>
+          <div className="lupulo"></div>
+          <p>
+            Alcabar é um dos primeiros bares a ser feito na própria fabrica onde
+            é produzida nossa cerveja, foi feito para ter um estilo industrial
+            leve combinado com uma decoração moderna, isso tudo com cozinha e um
+            ótimo espaço para shows e eventos.
+          </p>
+        </div>
       </div>
     </>
   );
