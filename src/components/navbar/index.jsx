@@ -12,6 +12,13 @@ export const NavBar = () => {
     window.scrollY >= 80 ? setNavBg(false) : setNavBg(true);
   };
 
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   useEffect(() => {
     window.addEventListener("scroll", changeNavBg);
     return () => {
@@ -23,6 +30,7 @@ export const NavBar = () => {
     <>
       <nav className={navBg ? "nav-transparent" : "nav-white"}>
         <img
+          onClick={handleScrollToTop}
           src={navBg ? logo : logoBlack}
           alt="Logo"
           className={navBg ? "logo" : "logo-black"}
