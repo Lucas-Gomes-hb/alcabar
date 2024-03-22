@@ -1,4 +1,8 @@
+import { FoodCard } from "../food-card";
 import "./styles.css";
+
+import batata from "../../images/batata.jpg";
+
 export const Cardapio = () => {
   return (
     <div className="foods">
@@ -9,42 +13,36 @@ export const Cardapio = () => {
           <h2>Veja os mais pedidos do nosso cardapio!</h2>
         </div>
         <div className="cardapio">
-          <div className="food-card">
-            <div className="food-cover">
-              <h2>Title</h2>
-              <p>aqui vai um pequena descrição do produto</p>
-            </div>
-          </div>
-          <div className="food-card">
-            <div className="food-cover">
-              <h2>Title</h2>
-              <p>aqui vai um pequena descrição do produto</p>
-            </div>
-          </div>
-          <div className="food-card">
-            <div className="food-cover">
-              <h2>Title</h2>
-              <p>aqui vai um pequena descrição do produto</p>
-            </div>
-          </div>
-          <div className="food-card">
-            <div className="food-cover">
-              <h2>Title</h2>
-              <p>aqui vai um pequena descrição do produto</p>
-            </div>
-          </div>
-          <div className="food-card">
-            <div className="food-cover">
-              <h2>Title</h2>
-              <p>aqui vai um pequena descrição do produto</p>
-            </div>
-          </div>
-          <div className="food-card">
-            <div className="food-cover">
-              <h2>Title</h2>
-              <p>aqui vai um pequena descrição do produto</p>
-            </div>
-          </div>
+          <FoodCard
+            title={"Batata Frita"}
+            text={"Aqui vai a descrição"}
+            cover={batata}
+          />
+          <FoodCard
+            title={"Batata Frita"}
+            text={"Aqui vai a descrição"}
+            cover={batata}
+          />
+          <FoodCard
+            title={"Batata Frita"}
+            text={"Aqui vai a descrição"}
+            cover={batata}
+          />
+          <FoodCard
+            title={"Batata Frita"}
+            text={"Aqui vai a descrição"}
+            cover={batata}
+          />
+          <FoodCard
+            title={"Batata Frita"}
+            text={"Aqui vai a descrição"}
+            cover={batata}
+          />
+          <FoodCard
+            title={"Batata Frita"}
+            text={"Aqui vai a descrição"}
+            cover={batata}
+          />
         </div>
         <div className="round-up"></div>
       </div>

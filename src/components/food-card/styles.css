@@ -1,0 +1,26 @@
+.food-card {
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-radius: 5px;
+  background-position: center;
+}
+
+.food-cover {
+  height: 100%;
+  width: 100%;
+  color: #00000000;
+  cursor: pointer;
+  transition: 0.3s;
+  display: grid;
+  border-radius: 5px;
+
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.food-cover:hover {
+  color: #fff;
+  background-color: #0000006b;
+}

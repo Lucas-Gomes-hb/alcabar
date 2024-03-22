@@ -1,4 +1,4 @@
-.conheca-informacao {
+.informacao {
   margin: auto;
   width: 65%;
   display: flex;
@@ -7,7 +7,7 @@
   margin-bottom: 15px;
 }
 
-.conheca-informacao .lupulo {
+.informacao .lupulo {
   width: 90px;
   height: 30px;
   background: url("../../images/lupulo.jpg") repeat-x;
@@ -15,7 +15,7 @@
   margin-bottom: 15px;
 }
 
-.conheca-informacao h2 {
+.informacao h2 {
   font-family: "Kaushan Script", cursive;
   font-size: 45px;
   line-height: 1;
@@ -23,7 +23,7 @@
   margin-bottom: 15px;
 }
 
-.conheca-informacao h3 {
+.informacao h3 {
   font-family: "Great Vibes", cursive;
   font-size: 35px;
   line-height: 45px;
@@ -33,7 +33,7 @@
   margin-bottom: 10px;
 }
 
-.conheca-informacao p {
+.informacao p {
   font-family: "Raleway", cursive;
   font-size: 15px;
   line-height: 24px;

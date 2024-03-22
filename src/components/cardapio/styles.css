@@ -1,7 +1,7 @@
 .round {
   width: 90px;
   background-color: #fff;
-  height: 15px;
+  height: 44px;
   margin: auto;
   border-bottom-left-radius: 600px;
   border-bottom-right-radius: 600px;
@@ -9,7 +9,7 @@
 .round-up {
   width: 90px;
   background-color: #fff;
-  height: 15px;
+  height: 45px;
   margin: auto;
   border-top-left-radius: 600px;
   border-top-right-radius: 600px;
@@ -17,7 +17,7 @@
 .foods {
   background-image: url("../../images/8.jpg");
   background-size: cover;
-  height: 166vh;
+  height: 174vh;
 }
 
 .foods .cardapio-background {

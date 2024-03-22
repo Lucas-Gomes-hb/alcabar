@@ -4,6 +4,7 @@ import { MainContainer } from "../../components/main-container";
 import { NavBar } from "../../components/navbar";
 import { ConhecaACasa } from "../../components/conheca";
 import { Cardapio } from "../../components/cardapio";
+import { Drinkable } from "../../components/drinkable";
 
 export const Home = () => {
   return (
@@ -12,6 +13,7 @@ export const Home = () => {
       <MainContainer />
       <ConhecaACasa />
       <Cardapio />
+      <Drinkable />
     </>
   );
 };
