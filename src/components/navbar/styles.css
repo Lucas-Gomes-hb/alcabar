@@ -4,7 +4,6 @@
 nav {
   min-height: 15vh;
   width: 100%;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,11 +13,13 @@ nav {
 .nav-transparent {
   background: rgba(27, 27, 27, 0.5);
   color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .nav-white {
   background: #fff;
   color: #333;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 nav .logo {

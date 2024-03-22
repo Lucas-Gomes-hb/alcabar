@@ -10,6 +10,9 @@ export const Home = () => {
       <NavBar />
       <MainContainer />
       <ConhecaACasa />
+      <div className="foods">
+        <div className="cardapio"></div>
+      </div>
     </>
   );
 };
