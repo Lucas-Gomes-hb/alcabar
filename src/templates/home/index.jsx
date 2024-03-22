@@ -11,7 +11,9 @@ export const Home = () => {
       <MainContainer />
       <ConhecaACasa />
       <div className="foods">
-        <div className="cardapio"></div>
+        <div className="cardapio-background">
+          <div className="cardapio"></div>
+        </div>
       </div>
     </>
   );

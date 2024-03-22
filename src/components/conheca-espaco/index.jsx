@@ -86,8 +86,14 @@ export const ConhecaEspaco = () => {
     if (active != null) active.classList = [];
     if (activeBorder != null) activeBorder.classList = [];
 
-    e.target.classList = ["active"];
-    e.target.children[0].classList = ["active-border"];
+    if (e.target.parentElement.className !== "options") {
+      e.target.parentElement.classList = ["active"];
+      e.target.classList = ["active-border"];
+    }
+    if (e.target.parentElement.className === "options") {
+      e.target.classList = ["active"];
+      e.target.children[0].classList = ["active-border"];
+    }
 
     handleShowPhotos(e.target.id);
   };
@@ -107,17 +113,29 @@ export const ConhecaEspaco = () => {
   };
 
   const handleShowPhotos = (id) => {
+    let inteiro = 0;
     setCard(
       informations[id].map((card) => (
-        <Card body={card.body} title={card.title} image={card.image} />
+        <Card
+          key={(inteiro += 1)}
+          body={card.body}
+          title={card.title}
+          image={card.image}
+        />
       ))
     );
   };
 
   useEffect(() => {
+    let inteiro = 0;
     setCard(
       informations.salao.map((e) => (
-        <Card body={e.body} title={e.title} image={e.image} />
+        <Card
+          key={(inteiro += 1)}
+          body={e.body}
+          title={e.title}
+          image={e.image}
+        />
       ))
     );
   }, [informations]);
@@ -133,7 +151,7 @@ export const ConhecaEspaco = () => {
           onMouseOut={handleMouseOutButton}
         >
           Salão
-          <div className="active-border"></div>
+          <div id="salao" className="active-border"></div>
         </button>
         <button
           id="bar"
@@ -142,7 +160,7 @@ export const ConhecaEspaco = () => {
           onMouseOut={handleMouseOutButton}
         >
           Bar
-          <div></div>
+          <div id="bar"></div>
         </button>
         <button
           id="cozinha"
@@ -151,7 +169,7 @@ export const ConhecaEspaco = () => {
           onMouseOut={handleMouseOutButton}
         >
           Cozinha
-          <div></div>
+          <div id="cozinha"></div>
         </button>
         <button
           id="parrilha"
@@ -160,7 +178,7 @@ export const ConhecaEspaco = () => {
           onMouseOut={handleMouseOutButton}
         >
           Parrilha
-          <div></div>
+          <div id="parrilha"></div>
         </button>
       </div>
       <div className="show" id="show-photos">
