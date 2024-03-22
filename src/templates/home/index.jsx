@@ -3,6 +3,7 @@ import "./styles.css";
 import { MainContainer } from "../../components/main-container";
 import { NavBar } from "../../components/navbar";
 import { ConhecaACasa } from "../../components/conheca";
+import { Cardapio } from "../../components/cardapio";
 
 export const Home = () => {
   return (
@@ -10,11 +11,7 @@ export const Home = () => {
       <NavBar />
       <MainContainer />
       <ConhecaACasa />
-      <div className="foods">
-        <div className="cardapio-background">
-          <div className="cardapio"></div>
-        </div>
-      </div>
+      <Cardapio />
     </>
   );
 };

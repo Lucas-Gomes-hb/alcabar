@@ -11,6 +11,22 @@ html {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  ::-webkit-scrollbar {
+    background-color: #33333300;
+    width: 5px;
+  }
+
+  /* ::-webkit-scrollbar-track {
+    background: #33333300;
+  }*/
+
+  ::-webkit-scrollbar-thumb {
+    background: #333333;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+  }
 }
 body {
   margin: 0;
