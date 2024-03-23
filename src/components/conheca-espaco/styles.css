@@ -44,7 +44,10 @@
 
 .show {
   margin-top: 40px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minMax(360px, 1fr));
+  grid-template-rows: repeat(auto-fill, minMax(50%, 1fr));
+  gap: 10px;
 }
 
 @keyframes slide-border {
