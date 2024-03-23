@@ -5,6 +5,7 @@ import { NavBar } from "../../components/navbar";
 import { ConhecaACasa } from "../../components/conheca";
 import { Cardapio } from "../../components/cardapio";
 import { Drinkable } from "../../components/drinkable";
+import { Footer } from "../../components/footer";
 
 export const Home = () => {
   return (
@@ -14,6 +15,7 @@ export const Home = () => {
       <ConhecaACasa />
       <Cardapio />
       <Drinkable />
+      <Footer />
     </>
   );
 };
