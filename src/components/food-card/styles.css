@@ -24,3 +24,22 @@
   color: #fff;
   background-color: #0000006b;
 }
+
+@media (max-width: 480px) {
+  .food-card {
+    display: grid;
+    align-content: end;
+  }
+  .food-cover {
+    color: #fff;
+    background-color: #0000006b;
+    height: 230px;
+  }
+
+  .food-cover h2 {
+    font-size: 20px;
+  }
+  .food-cover p {
+    font-size: 14px;
+  }
+}

@@ -2,3 +2,8 @@
   background: #fff;
   padding: 120px 100px;
 }
+@media (max-width: 480px) {
+  .conheca-container {
+    padding: 50px 5px;
+  }
+}

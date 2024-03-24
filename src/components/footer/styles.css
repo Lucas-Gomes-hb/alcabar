@@ -79,3 +79,33 @@ footer h2 {
   border-top-left-radius: 600px;
   border-top-right-radius: 600px;
 }
+
+@media (max-width: 480px) {
+  .copyright {
+    padding: 15px;
+  }
+  footer {
+    height: 250px;
+  }
+
+  footer a {
+    margin-bottom: 3px;
+  }
+
+  footer h2 {
+    font-size: 20px;
+  }
+  footer div p {
+    margin-bottom: 3px;
+  }
+
+  footer div {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    padding: 10px;
+  }
+  .endereco a {
+    font-size: 12px;
+  }
+}

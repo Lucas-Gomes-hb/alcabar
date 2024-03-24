@@ -41,3 +41,26 @@
   text-align: center;
   width: 85%;
 }
+
+@media (max-width: 480px) {
+  .informacao {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .informacao h2 {
+    font-size: 35px;
+  }
+
+  .informacao h3 {
+    font-size: 30px;
+  }
+  .informacao p {
+    font-size: 13px;
+  }
+}

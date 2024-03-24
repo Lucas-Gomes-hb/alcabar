@@ -1,6 +1,7 @@
 .drinkable {
   padding: 120px 100px;
 }
+
 .drinkable-choices {
   margin-top: 50px;
 }
@@ -63,4 +64,21 @@
 
 .bodyOn div {
   padding: 30px;
+}
+
+@media (max-width: 480px) {
+  .drinkable {
+    padding: 50px 5px;
+  }
+  .bodyOn img {
+    width: 300px;
+    height: 200px;
+  }
+  .drinkable-choices .show {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minMax(300px, 1fr));
+    grid-template-rows: repeat(auto-fill, minMax(50%, 1fr));
+    gap: 5px;
+  }
 }
