@@ -41,3 +41,12 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
 }
+button {
+  color: #000;
+}
+
+@media (max-width: 480px) {
+  body {
+    background-size: 200vw 100vh;
+  }
+}

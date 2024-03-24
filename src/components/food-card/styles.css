@@ -27,13 +27,11 @@
 
 @media (max-width: 480px) {
   .food-card {
-    display: grid;
-    align-content: end;
+    display: block;
   }
   .food-cover {
     color: #fff;
     background-color: #0000006b;
-    height: 230px;
   }
 
   .food-cover h2 {

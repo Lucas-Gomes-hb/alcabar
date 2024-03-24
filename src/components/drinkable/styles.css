@@ -68,10 +68,10 @@
 
 @media (max-width: 480px) {
   .drinkable {
-    padding: 50px 5px;
+    padding: 100px 5px;
   }
   .bodyOn img {
-    width: 300px;
+    width: 100%;
     height: 200px;
   }
   .drinkable-choices .show {

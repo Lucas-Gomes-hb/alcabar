@@ -7,28 +7,50 @@ export const Card = ({ title, body, image, bodyStyle, hasModal }) => {
   const classe = bodyStyle == null ? "" : bodyStyle;
   const [modalIsOpen, setIsOpen] = useState(false);
 
+  const content =
+    window.screen.width > 480
+      ? {
+          width: "50%",
+          height: "80%",
+          top: "50%",
+          left: "50%",
+          right: "auto",
+          bottom: "auto",
+          marginRight: "-50%",
+          transform: "translate(-50%, -50%)",
+          backgroundImage: `url(${image})`,
+          color: "#fff",
+          backgroundRepeat: "no-repeat",
+          padding: "0",
+          display: "grid",
+          alignContent: "space-between",
+          justifyItems: "end",
+        }
+      : {
+          width: "90%",
+          height: "70%",
+          top: "50%",
+          left: "50%",
+          right: "auto",
+          bottom: "auto",
+          marginRight: "-50%",
+          transform: "translate(-50%, -50%)",
+          backgroundImage: `url(${image})`,
+          color: "#fff",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          padding: "0",
+          display: "grid",
+          alignContent: "space-between",
+          justifyItems: "end",
+        };
+
   const customStyles = {
     overlay: {
       backgroundColor: "rgba(0,0,0,0.4)",
       zIndex: 100000,
     },
-    content: {
-      width: "50%",
-      height: "80%",
-      top: "50%",
-      left: "50%",
-      right: "auto",
-      bottom: "auto",
-      marginRight: "-50%",
-      transform: "translate(-50%, -50%)",
-      backgroundImage: `url(${image})`,
-      color: "#fff",
-      backgroundRepeat: "no-repeat",
-      padding: "0",
-      display: "grid",
-      alignContent: "space-between",
-      justifyItems: "end",
-    },
+    content: content,
   };
 
   const openModal = () => {
