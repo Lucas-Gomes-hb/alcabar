@@ -78,7 +78,7 @@
     margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(1, 100%);
-    grid-template-rows: repeat(6, 50%);
+    grid-template-rows: repeat(6, 30vh);
     gap: 5px;
   }
 }
