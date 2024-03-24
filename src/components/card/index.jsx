@@ -94,12 +94,7 @@ export const Card = ({ title, body, image, bodyStyle, hasModal }) => {
       </Modal>
       <div className={"card " + classe} onClick={openModal}>
         <img src={image} alt={title} />
-        <div
-          style={{
-            display: "grid",
-            justifyItems: "center",
-          }}
-        >
+        <div className="grid-center">
           <h2>{title}</h2>
           <p>{body}</p>
         </div>
