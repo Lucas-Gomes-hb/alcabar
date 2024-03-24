@@ -62,6 +62,6 @@
 @media (max-width: 480px) {
   .conheca-espaco .show {
     grid-template-columns: repeat(1, 100%);
-    grid-template-rows: repeat(6, 15%);
+    grid-template-rows: repeat(3, 30%);
   }
 }
