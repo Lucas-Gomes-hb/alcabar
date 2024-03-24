@@ -81,4 +81,7 @@
     text-align: center;
     margin-bottom: 30px;
   }
+  .grid-center {
+    height: 30vh;
+  }
 }
